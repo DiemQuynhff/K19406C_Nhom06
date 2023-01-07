@@ -6,3 +6,4 @@ Feature: Business rules for Create New Company
   Scenario: Test create new company function
     Given I login to Casso page
     Given I create new company
+    # Given Verify for new company

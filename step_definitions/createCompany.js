@@ -8,4 +8,3 @@ Given('I create new company', () => {
     createCompanyFunction.createCompany(companyLocator.url, companyWebsite, companyName)
     
 })
-
