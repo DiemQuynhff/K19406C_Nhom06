@@ -5,11 +5,11 @@ const apiLocator = require('../page/APIkey/locator')
 const apiKeyFunction = require('../page/APIkey/index')
 
 Given('I create API keys', () => {
-    apiKeyFunction.createAPI(apiLocator.url, apiName)
+    apiKeyFunction.createAPI( apiName)
 })
 Given('I edit API keys', () => {
-    apiKeyFunction.editAPI(apiLocator.url, newApiName)
+    apiKeyFunction.editAPI( newApiName)
 })
 Given('I delete API keys', () => {
-    apiKeyFunction.deleteAPI(apiLocator.url)
+    apiKeyFunction.deleteAPI()
 })

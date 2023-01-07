@@ -1,7 +1,7 @@
 module.exports = {
-    url: 'https://crosstech-sandbox.casso.vn/',
-    establishButton: '/html/body/app-root/div/div/mat-sidenav-container/mat-sidenav/div/app-sidebar-bussiness/mat-nav-list/mat-accordion/div[3]/mat-expansion-panel/mat-expansion-panel-header/span/mat-panel-description',
-    apiKeyPageButton: '/html/body/app-root/div/div/mat-sidenav-container/mat-sidenav/div/app-sidebar-bussiness/mat-nav-list/mat-accordion/div[3]/mat-expansion-panel/div/div/a[6]/div',
+    url1: 'https://crosstech-sandbox.casso.vn/business/1347/connections',
+    establishButton: '//app-sidebar-bussiness/mat-nav-list/mat-accordion/div[3]/mat-expansion-panel/mat-expansion-panel-header[1]/span/mat-panel-description',
+    apiKeyPageButton: 'mat-accordion/div[3]/mat-expansion-panel/div/div/a[6]',
     createApiButton: '//div[@class="api-keys-header-action"]',
     apiNameField: '//input[@formcontrolname="name"]',
     createAndViewApiButton: '//button[@type="submit"]',

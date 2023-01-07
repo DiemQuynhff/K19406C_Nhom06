@@ -1,5 +1,6 @@
 const {I} = inject()
 const companyLocator = require('./locator')
+const apiLocator = require('../APIkey/locator')
 const homePageLocator = require('../homepage/locator')
 const timeout = require('../common/timeout')
 
@@ -11,10 +12,11 @@ module.exports = {
         I.fillField(companyLocator.companyNameField, companyName)
         I.click(companyLocator.chooseRadioBtn)
         I.click(companyLocator.createButton)
-        I.waitForNavigation()
+        I.waitForElement(companyLocator.apiLocator)
+        //...
+        // I.waitForNavigation()
         // I.click(companyLocator.companyNameButton)
         // I.click(companyLocator.viewCompanyProfileButton)
-        // I.see('Thuoc si')
     },
     // verifyCompany(url) {
     //     I.amOnPage(url)
