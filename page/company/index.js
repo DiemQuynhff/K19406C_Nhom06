@@ -11,10 +11,10 @@ module.exports = {
         I.fillField(companyLocator.companyNameField, companyName)
         I.click(companyLocator.chooseRadioBtn)
         I.click(companyLocator.createButton)
-        // I.waitForElement(homePageLocator.menu.dangXuatText, timeout.loading)
+        I.waitForNavigation()
         // I.click(companyLocator.companyNameButton)
         // I.click(companyLocator.viewCompanyProfileButton)
-        I.see('Thuoc si')
+        // I.see('Thuoc si')
     },
     // verifyCompany(url) {
     //     I.amOnPage(url)

@@ -5,3 +5,4 @@ Feature: Business rules for login
 
   Scenario: Test login function
     Given I login to Casso page
+    
