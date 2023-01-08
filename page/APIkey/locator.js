@@ -1,18 +1,18 @@
 module.exports = {
-    url1: 'https://crosstech-sandbox.casso.vn/business/1347/connections',
-    establishButton: '//app-sidebar-bussiness/mat-nav-list/mat-accordion/div[3]/mat-expansion-panel/mat-expansion-panel-header[1]/span/mat-panel-description',
-    apiKeyPageButton: 'mat-accordion/div[3]/mat-expansion-panel/div/div/a[6]',
-    createApiButton: '//div[@class="api-keys-header-action"]',
+    apiKeyPageButton: '//mat-accordion/div[3]/mat-expansion-panel/div/div/a[6]',
+    createApiButton: '//button[@class="mat-focus-indicator mat-raised-button mat-button-base"]',
     apiNameField: '//input[@formcontrolname="name"]',
-    createAndViewApiButton: '//button[@type="submit"]',
-    doneButton: '//button[contains(@class,"mat-button")]',
+    createAndViewApiButton: "//mat-dialog-container[@id='mat-dialog-0']/app-api-key-panel/div/div[2]/form/div/div/div[2]/button",
+    doneButton: '//button[@class="mat-focus-indicator mat-button mat-button-base"]',
+    apiText: '//b',
 
     //edit API
-    editButton: '//button[@mattooltip="Sửa"]',
-    // this.editButton: '//div/div[2]/mat-table/mat-row/mat-cell[3]/div/button[1]',
-    saveChangeButton: '//button[@type="submit"]',
+    editButton: "//button[@class='mat-focus-indicator mat-tooltip-trigger btn-30 mat-icon-button mat-button-base']",
+    apiEditField: "//mat-dialog-container[@id='mat-dialog-1']/app-api-key-panel/div/div[2]/form/mat-form-field/div/div/div/input",
+    saveChangeButton: "//mat-dialog-container[@id='mat-dialog-1']/app-api-key-panel/div/div[2]/form/div/div/div[2]/button",
 
     //delete API
-    deleteButton: '//div/div[2]/mat-table/mat-row/mat-cell[3]/div/button[2]',
-    agreeToDeleteButton: '//div/div[3]/button[2]'
+    deleteButton: '//mat-icon[contains(.,"delete")]',
+    agreeToDeleteButton: "//mat-dialog-container[@id='mat-dialog-2']/app-basic-dialog/div/div[3]/button[2]",
+    confirmText: '//div[2]/div/div'
 }

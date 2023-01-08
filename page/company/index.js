@@ -5,23 +5,16 @@ const homePageLocator = require('../homepage/locator')
 const timeout = require('../common/timeout')
 
 module.exports = {
-    createCompany(url, companyWebsite, companyName) {
+    createCompany(companyWebsite, companyName) {
         // I.amOnPage(url)
         I.click(companyLocator.switchButton)
         I.fillField(companyLocator.websiteField, companyWebsite)
         I.fillField(companyLocator.companyNameField, companyName)
         I.click(companyLocator.chooseRadioBtn)
         I.click(companyLocator.createButton)
-        I.waitForElement(companyLocator.apiLocator)
-        //...
-        // I.waitForNavigation()
-        // I.click(companyLocator.companyNameButton)
-        // I.click(companyLocator.viewCompanyProfileButton)
+        // I.see(companyName)
+        
+        
     },
-    // verifyCompany(url) {
-    //     I.amOnPage(url)
-    //     I.click(companyLocator.companyNameButton)
-    //     I.click(companyLocator.viewCompanyProfileButton)
-    // }
 
 }

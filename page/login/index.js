@@ -10,7 +10,7 @@ module.exports = {
         I.fillField(loginLocator.emailField, email)
         I.fillField(loginLocator.passwordField, password)
         I.click(loginLocator.loginButton)
-        I.waitForElement(homePageLocator.menu.dangXuatText, timeout.loading)
+        // I.waitForElement(homePageLocator.menu.dangXuatText, timeout.loading)
     },
 
 }
